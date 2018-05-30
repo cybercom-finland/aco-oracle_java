@@ -2,7 +2,7 @@ module Puppet::Parser::Functions
   begin
     require 'puppet_x/aco/util'
   rescue LoadError
-      require File.join File.dirname(__FILE__), '../../puppet_x/aco/util'
+      require File.join File.dirname(__FILE__), '../../../puppet_x/aco/util'
   end
 
   newfunction(:oracle_sso, :type => :rvalue) do |args|
